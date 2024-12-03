@@ -1,0 +1,53 @@
+body {
+  font-family: 'Kode Mono', monospace;
+  background-color: #a6b7f2;
+  text-align: center;
+  padding: 20px;
+}
+.game-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #c1d1fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #b36200;
+}
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+#timer {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5em;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+#message {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+
+
+
