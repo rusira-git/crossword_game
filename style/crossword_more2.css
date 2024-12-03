@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Kode Mono', monospace;
+    background-color: #a6b7f2; 
+}
+
+
+#crossword-container {
+    text-align: center;
+    background-color: #c1d1fc;
+    max-width: 700px; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#crossword-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+#crossword-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 40px); 
+    grid-template-rows: repeat(9, 40px);
+    gap: 5px; /* Space between cells */
+    justify-content: center;
+    margin: 20px auto; /* Center the grid */
+}
+
+/* Empty cell styling */
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.letter-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.letter-cell:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50; 
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+#timer {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#showHintButton,
+#submit-btn {
+    background-color: #b36200;
+    color: white;
+}
+
+button:hover {
+    background-color: #944a00; 
+}
+
+
+
+/* Disabled button */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+#feedback {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+  

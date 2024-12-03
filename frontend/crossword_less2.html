@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Crossword Puzzle</title>
+    <link rel="stylesheet" href="crossword_less2.css">
+</head>
+<body>
+    <div id="crossword-container">
+        <h1>Crossword Puzzle</h1>
+        <div id="timer">Time Remaining: 2:00</div>
+
+        
+        <div id="crossword-grid">
+
+            <!-- Row 1 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">2.</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!-- Row 2 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="E">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!-- Row 3 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">1.</div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="C">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="H">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="U">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="R">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="C">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="H">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="I">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="L">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="L">
+
+            <!-- Row 4 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="N">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!-- Row 5 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="S">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!-- Row 6 -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="T">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!-- Row 7 -->
+            <div class="cell">3.</div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="A">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="R">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="I">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="S">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="T">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="O">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="T">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="L">
+            <input type="text" maxlength="1" class="letter-cell" data-answer="E">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <!--Row 8-->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="I">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            
+            <!--Row 9-->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <input type="text" maxlength="1" class="letter-cell" data-answer="N">
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+
+
+            
+
+
+        <button id="showHintButton">Hints</button>
+
+
+        
+
+
+
+        <button id="submit-btn">Check Answers</button>
+        <button id="nextButton" disabled>Next</button>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="crossword_less2.js"></script>
+</body>
+</html>

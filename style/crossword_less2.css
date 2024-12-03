@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #a6b7f2;
+    font-family: 'Kode Mono', monospace;
+}
+
+/* Container for the crossword puzzle */
+#crossword-container {
+    background-color: #c1d1fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Title styling */
+#crossword-container h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Crossword grid layout */
+#crossword-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 40px); /* Create 12 columns */
+    grid-template-rows: repeat(9, 40px); /* Create 9 rows */
+    gap: 5px; /* Add spacing between cells */
+    margin: 0 auto;
+}
+
+/* General cell styling (empty spaces) */
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+/* Input cell styling */
+
+.letter-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #ffffff; /* White for input cells */
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
+/* Highlight the input cell when focused */
+.letter-cell:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px #4CAF50; /* Add glow */
+}
+
+/* Buttons styling */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #b36200;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #944a00;
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Feedback styling */
+#feedback {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333333;
+}
